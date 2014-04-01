@@ -23,11 +23,17 @@
       <height>400</height>
      </rect>
     </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>375</x>
       <y>30</y>
       <width>20</width>
       <height>400</height>
@@ -53,56 +59,82 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>32</x>
-      <y>2</y>
-      <width>337</width>
+      <x>34</x>
+      <y>0</y>
+      <width>617</width>
       <height>26</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
       <widget class="QLabel" name="label">
        <property name="text">
         <string>X:</string>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="1">
       <widget class="QDoubleSpinBox" name="xvalue">
+       <property name="minimum">
+        <double>-999.990000000000009</double>
+       </property>
        <property name="maximum">
         <double>999.990000000000009</double>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="2">
       <widget class="QLabel" name="label_3">
        <property name="text">
         <string>mm</string>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="3">
       <widget class="QLabel" name="label_2">
        <property name="text">
         <string>Y:</string>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="4">
       <widget class="QDoubleSpinBox" name="yvalue">
+       <property name="minimum">
+        <double>-999.990000000000009</double>
+       </property>
        <property name="maximum">
         <double>999.990000000000009</double>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="5">
       <widget class="QLabel" name="label_4">
        <property name="text">
         <string>mm</string>
        </property>
       </widget>
      </item>
-     <item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Channel:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QSpinBox" name="chvalue"/>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Calibration K:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="9">
+      <widget class="QDoubleSpinBox" name="calibvalue"/>
+     </item>
+     <item row="0" column="10">
       <widget class="QPushButton" name="pushButton">
        <property name="text">
         <string>Add Gauge</string>

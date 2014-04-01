@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include <stdlib.h>
+#include "gauges.h"
 
 namespace Ui {
 class zmpview;
@@ -14,7 +15,7 @@ class zmpview : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit zmpview(QWidget *parent = 0);
+    explicit zmpview(TGauges *Gauges, QWidget *parent = 0);
     ~zmpview();
 
 private slots:
@@ -23,6 +24,7 @@ private slots:
 private:
     Ui::zmpview *ui;
     QGraphicsScene *scene;
+    TGauges *Gauges;
 };
 
 #endif // ZMPVIEW_H

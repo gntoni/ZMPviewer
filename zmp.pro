@@ -15,6 +15,9 @@ TEMPLATE = app
 SOURCES += main.cpp\
         zmpview.cpp
 
-HEADERS  += zmpview.h
+HEADERS  += zmpview.h \
+    gauges.h
 
 FORMS    += zmpview.ui
+
+unix:!macx: LIBS += -lcomedi
